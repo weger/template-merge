@@ -15,22 +15,36 @@
 header.html：
 
 ``` html
-
+    <header>
+        <h1 class="logo">${title}</h1>
+        <nav>
+            <ul>
+                {{each data}}
+                <li><a href="${url}">${name}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    </header>
 ```
 
 footer.html：
 
 ``` html
-
+    <footer>
+        <p>&copy; xxxxxxxxxx ${companyName} ${tel}</p>
+    </footer>
 ```
 
 打包后的效果：
 
 ``` javascript
-  
+    define({
+        "footer":'<footer>    <p>&copy; xxxxxxxxxx ${companyName} ${tel}</p></footer>',
+        "header":'<header>    <h1 class="logo">${title}</h1>    <nav>        <ul>            {{each data}}            <li><a href="${url}">${name}</a></li>            {{/each}}        </ul>    </nav></header>'
+    });
 ```
 
-##template-merge怎么使用？
+## template-merge怎么使用？
 命令行里输入：
 java -cp util.jar util.TranferUtil F:\templates F:\tpls.js Const 1
 
@@ -40,24 +54,25 @@ Const全局变量名
 1 是否清空原生成的文件，1为清空，0为不清空
 
 
-##有问题反馈
+## 有问题反馈
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 
+* https://github.com/weger/template-merge/issues
 * 邮件(lovexctk#gmail.com, 把#换成@)
-* QQ: 363250552
 * weibo: [@枝江人](http://weibo.com/lovexctk)
 * twitter: [@lovexctk](http://twitter.com/lovexctk)
 
-##捐助开发者
+## 捐助开发者
 在兴趣的驱动下,写一个`免费`的东西，有欣喜，也还有汗水，希望你喜欢我的作品，同时也能支持一下。
-当然，有钱捧个钱场（右上角的爱心标志，支持支付宝和PayPal捐助），没钱捧个人场，谢谢各位。
+当然，有钱捧个钱场，没钱捧个人场，谢谢各位。
+![通过支付宝捐赠](https://i.alipayobjects.com/e/201211/1dbRyKG5m0.png)( https://me.alipay.com/xctk)
 
-
-##关于作者
+## 关于作者
 
 ``` javascript
   var me = {
     nickName  : "枝江人",
+    QQ: "363250552",
     email : "lovexctk@gmail.com",
     blog : "http://www.cnblogs.com/jsfans"
   }
