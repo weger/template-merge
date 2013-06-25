@@ -1,0 +1,61 @@
+##template-merge是什么?
+一个模板合并工具，目前是java版本的，可以打包成jar使用
+
+当你在做前端开发的时候，如有用过前端模板引擎，肯定会有遇到如下几点困惑：
+
+ * 页面模板很多时，模板写到页面里感觉会特别的乱，而且会给页面大小带来额外的开销
+ * 单独的把页面模板放到一个目录时，用起来比较麻烦，需要$.get去取，来回请求开销也很大
+ * 或者我手工的把模板都写在一个模块里，但修改起来又增加了寻找的麻烦
+
+现在你不用担心了，template-merge工具可以帮你搞得一切。
+
+##template-merge主要功能？
+打包前的目录templates下，有如下两个html文件：
+
+header.html：
+```html
+
+```
+
+footer.html：
+```html
+
+```
+
+打包后的效果：
+```javascript
+  
+```
+
+##template-merge怎么使用？
+命令行里输入：
+java -cp util.jar util.TranferUtil F:\templates F:\tpls.js Const 1
+
+F:\templates 模板文件目录(默认会合并.html后缀的文件) 
+F:\tpls.js 合并的js文件 
+Const全局变量名 
+1 是否清空原生成的文件，1为清空，0为不清空
+
+
+##有问题反馈
+在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
+
+* 邮件(lovexctk#gmail.com, 把#换成@)
+* QQ: 363250552
+* weibo: [@枝江人](http://weibo.com/lovexctk)
+* twitter: [@lovexctk](http://twitter.com/lovexctk)
+
+##捐助开发者
+在兴趣的驱动下,写一个`免费`的东西，有欣喜，也还有汗水，希望你喜欢我的作品，同时也能支持一下。
+当然，有钱捧个钱场（右上角的爱心标志，支持支付宝和PayPal捐助），没钱捧个人场，谢谢各位。
+
+
+##关于作者
+
+```javascript
+  var me = {
+    nickName  : "枝江人",
+    email : "lovexctk@gmail.com",
+    blog : "http://www.cnblogs.com/jsfans"
+  }
+```
