@@ -1,4 +1,4 @@
-##template-merge是什么?
+## template-merge是什么?
 一个模板合并工具，目前是java版本的，可以打包成jar使用
 
 当你在做前端开发的时候，如有用过前端模板引擎，肯定会有遇到如下几点困惑：
@@ -9,21 +9,24 @@
 
 现在你不用担心了，template-merge工具可以帮你搞得一切。
 
-##template-merge主要功能？
+## template-merge主要功能？
 打包前的目录templates下，有如下两个html文件：
 
 header.html：
-```html
+
+``` html
 
 ```
 
 footer.html：
-```html
+
+``` html
 
 ```
 
 打包后的效果：
-```javascript
+
+``` javascript
   
 ```
 
@@ -52,7 +55,7 @@ Const全局变量名
 
 ##关于作者
 
-```javascript
+``` javascript
   var me = {
     nickName  : "枝江人",
     email : "lovexctk@gmail.com",
