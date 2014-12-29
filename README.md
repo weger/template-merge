@@ -57,6 +57,5 @@ footer.html：
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 
 * https://github.com/weger/template-merge/issues
-* 邮件(lovexctk#gmail.com, 把#换成@)
-* weibo: [@枝江人](http://weibo.com/lovexctk)
+* weibo: [@枝江人](http://weibo.com/xctk)
 * twitter: [@lovexctk](http://twitter.com/lovexctk)
